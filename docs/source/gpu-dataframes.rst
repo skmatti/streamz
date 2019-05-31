@@ -31,7 +31,8 @@ Streaming cudf dataframes support the following classes of operations
 -  Reductions like ``df.amount.mean()``
 -  Windowed aggregations (fixed length) like ``df.window(n=100).amount.sum()``
 
-The following operations are not supported with cudf(as of version 0.8) yet
+The following operations are not supported with cudf(as of version 0.8) yet,
+
 -  Groupby-aggregations like ``df.groupby(df.name).amount.mean()``
 -  Windowed aggregations (index valued) like ``df.window(value='2h').amount.sum()``
 -  Windowed groupby aggregations like ``df.window(value='2h').groupby('name').amount.sum()``
